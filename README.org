@@ -47,3 +47,9 @@
 |                   | Proxy      | State                   |
 |                   |            | Strategy                |
 |                   |            | Visitor                 |
+
+
+** OOP:
+*** Program to an interface, not an implementation.
+*** Favor object composition over class inheritance.
+***
