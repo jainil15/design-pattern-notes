@@ -6,7 +6,7 @@
 - The *problem* describes when to apply the pattern
 - The *solution* describes the elements that make up the design, their relationships, concrete design or implementation, because situations.
 - The *consequences* are the results and trade offs of applying the pattern.
-* Catalog of Design Patterns:
+** Catalog of Design Patterns:
 | Design Pattern          | Definition                                                                                                                                                                                                            |
 |-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Abstract Factory        | Provide an interface for creating families of related or dependent objects without specifying their concrete classes.                                                                                                 |
@@ -32,3 +32,18 @@
 | Strategy                | Define a family of algorithms, encapsulate each one, and make them interchangable. Strategy lets the algorithm vary independently form clients  that use it.                                                          |
 | Template Method         | Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.           |
 | Visitor                 | Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.     |
+
+** Organizing the catalog
+| Purpose           |            |                         |
+| Creational        | Structural | Behavioral              |
+|-------------------+------------+-------------------------|
+| Factory Method    | Adapter    | Interpreter             |
+| Abstract  Factory | Adapter    | Chain of Responsibility |
+| Builder           | Bridge     | Command                 |
+| Prototype         | Composite  | Iterator                |
+| Singleton         | Decorator  | Mediator                |
+|                   | Facade     | Memento                 |
+|                   | Flyweight  | Observer                |
+|                   | Proxy      | State                   |
+|                   |            | Strategy                |
+|                   |            | Visitor                 |
