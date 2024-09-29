@@ -77,3 +77,36 @@
 
 ** Builder pattern:
 - Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+*** When to use:
+- The algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled.
+- The construction process must allow different representations for the object that's constructed.
+*** Consequences:
+1. It lets you vary a product's internal representation.
+2. It isolates code for construction and representation.
+3. It gives you finer control over the construction process.
+*** Implementations:
+- Assembing and the construction of the interface.
+- Constructing the products
+
+** Factory Method
+- Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+*** When to use:
+- A class can't anticipate the class of objects it must create.
+- A class wants its subclasses to specify the objects it creates.
+- Classes delegate responsibility to one of several helper subclasses, and you want to localize the knowledge of which helper subclass is the delegate.
+*** Implementations:
+- Two major varieties: 
+1. The case when the creator class is an abstract class and doesn't provide an implementation for the factory method it declares.
+2. The case when the creator class is a concrete class and provides a default implementation for the factory method.
+- Parmeterized factory methods.
+- Language-specific variations and issues.
+- Using templates to avoid subclassing.
+
+** Prototype
+- Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+
+** Singleton
+- Ensure a class only has one instance, and provide a global point of access to it.
+
+** State
+- Allow an object to alter it's behaviour when its internal state is changed.
